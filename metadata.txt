@@ -1,0 +1,25 @@
+[general]
+name=PlotBridge Mangrove
+description=Create mangrove field plots, extract area-weighted NDVI, and compare shifted plot positions.
+about=Creates 10 x 10 m and 20 x 20 m square plots from projected field coordinates.
+    Extracts area-weighted mean NDVI and valid-data coverage from a prepared single-band GDAL raster.
+    Compares original and translated plot positions using user-defined X/Y shifts in metres.
+    Current restrictions: plot and raster CRS must be EPSG:32752; square plots must be axis-aligned and the raster must be north-up without rotation.
+    Clouds must be masked before processing. NDVI calculation from satellite bands and mangrove classification are not included.
+    Results are temporary layers and must be exported for permanent storage.
+    Requires NumPy and GDAL Python bindings in the QGIS Python environment; see README.md for input requirements and usage.
+    License: GNU General Public License v3 or later (GPL-3.0-or-later); see LICENSE.
+version=0.1.0
+qgisMinimumVersion=4.2
+qgisMaximumVersion=4.99
+author=Farrel Siraj
+email=fsiraj348@gmail.com
+homepage=https://github.com/farrelsirajm-collab/plotbridge-mangrove
+repository=https://github.com/farrelsirajm-collab/plotbridge-mangrove
+tracker=https://github.com/farrelsirajm-collab/plotbridge-mangrove/issues
+category=Vector
+tags=mangrove,ndvi,field plots,spatial analysis
+experimental=True
+deprecated=False
+hasProcessingProvider=False
+changelog=0.1.0 - Initial experimental version with square plots, NDVI extraction, and displacement comparison.
